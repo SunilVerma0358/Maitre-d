@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+
 import './App.css';
+import './compontents/button';
+import Herosection from './compontents/navbar';
+import Maitredsection from './compontents/martred';
+import Features from './compontents/Features';
+import Modules from './compontents/Modules';
+import Pricing from './compontents/Pricing';
+import Contact from './compontents/Contact';
+import Footer from './compontents/footer';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return ( 
+      <div className = "App">
+       
+       <Herosection/>
+  <Maitredsection/>
+  <Features/>
+  <Modules/>
+  <Pricing/>
+  <Contact/>
+  <Footer/></div>
+        
+
+    );
 }
 
 export default App;
